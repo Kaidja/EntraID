@@ -6,8 +6,9 @@ Connect-AzureAD
 
 #Audit file location. It creates a CSV file
 $AuditFileLocation = "C:\AADAudit.csv"
-#Get Azur AD Tenant ID
+#Get Azure AD Tenant ID
 $AzureADTenantDID = (Get-AzureADTenantDetail).ObjectId
+
 #Azure AD Role names and IDs on my GitHub account
 $URL = "https://raw.githubusercontent.com/Kaidja/AzureActiveDirectory/main/AzureADRoles.json"
 #Convert Azure AD Roles from JSON
