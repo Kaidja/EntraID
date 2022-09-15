@@ -6,7 +6,7 @@ let AZRoleID = externaldata(Name:string, Id:guid )
 with(format="multijson");
 
 // Define the CIEM APP ID. Take the value from your Azure AD
-let CIEMAPPID = "c0ad313b-2424-4635-9b6d-1da50a2c6821";
+let CIEMAPPID = "Define your own value here";
 
 AzureActivity
 | extend Action = (parse_json(Authorization)).action
