@@ -1,0 +1,32 @@
+// Read the Azure Resource Roles from Github
+let AZRoleID = externaldata(Name:string, Id:guid )
+[
+  @"https://raw.githubusercontent.com/Kaidja/AzureActiveDirectory/main/AzureRoles.json"
+]
+with(format="multijson");
+
+// Define the CIEM APP ID. Take the value from your Azure AD
+let CIEMAPPID = "DEFINE YOUR OWN VALUE HERE";
+
+AzureActivity
+| extend Action = (parse_json(Authorization)).action
+// Take out only write actions
+| where Action == "Microsoft.Authorization/roleAssignments/write"
+// Filter based on the APP ID
+| where Caller == CIEMAPPID
+// Start only
+| where ActivityStatusValue == "Start"
+// Get the Subscription ID
+| extend SubscriptionID = (parse_json(Properties)).subscriptionId
+// Get the RequestBody
+| extend RequestBody = parse_json(tostring(parse_json(Properties).requestbody))
+| extend Scope = RequestBody.properties.scope
+| extend RoleDefinitionId = RequestBody.properties.roleDefinitionId
+| extend Id = tostring(split(RequestBody.properties.roleDefinitionId,"/")[6])
+// Join the Azure Resource Roles tables to get the real Role Name
+| join kind = inner(
+    AZRoleID
+        | extend Id = tostring(Id)
+) on Id
+// Print out the results
+| project TimeGenerated,Caller,Action,Scope,Name,Id,RoleDefinitionId
