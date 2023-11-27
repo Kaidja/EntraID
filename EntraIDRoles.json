@@ -10,21 +10,6 @@
         "Description":  "Can create application registrations independent of the \u0027Users can register applications\u0027 setting."
     },
     {
-        "DisplayName":  "Azure AD Joined Device Local Administrator",
-        "Id":  "9f06204d-73c1-4d4c-880a-6edb90606fd8",
-        "Description":  "Users assigned to this role are added to the local administrators group on Azure AD-joined devices."
-    },
-    {
-        "DisplayName":  "Azure DevOps Administrator",
-        "Id":  "e3973bdf-4987-49ae-837a-ba8e231c7286",
-        "Description":  "Can manage Azure DevOps organization policy and settings."
-    },
-    {
-        "DisplayName":  "Azure Information Protection Administrator",
-        "Id":  "7495fdc4-34c4-4d15-a289-98788ce399fd",
-        "Description":  "Can manage all aspects of the Azure Information Protection product."
-    },
-    {
         "DisplayName":  "Attack Payload Author",
         "Id":  "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
         "Description":  "Can create attack payloads that an administrator can initiate later."
@@ -37,12 +22,12 @@
     {
         "DisplayName":  "Attribute Assignment Administrator",
         "Id":  "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
-        "Description":  "Assign custom security attribute keys and values to supported Azure AD objects."
+        "Description":  "Assign custom security attribute keys and values to supported Microsoft Entra objects."
     },
     {
         "DisplayName":  "Attribute Assignment Reader",
         "Id":  "ffd52fa5-98dc-465c-991d-fc073eb59f8f",
-        "Description":  "Read custom security attribute keys and values for supported Azure AD objects."
+        "Description":  "Read custom security attribute keys and values for supported Microsoft Entra objects."
     },
     {
         "DisplayName":  "Attribute Definition Administrator",
@@ -55,14 +40,44 @@
         "Description":  "Read the definition of custom security attributes."
     },
     {
+        "DisplayName":  "Attribute Log Administrator",
+        "Id":  "5b784334-f94b-471a-a387-e7219fc49ca2",
+        "Description":  "Read audit logs and configure diagnostic settings for events related to custom security attributes."
+    },
+    {
+        "DisplayName":  "Attribute Log Reader",
+        "Id":  "9c99539d-8186-4804-835f-fd51ef9e2dcd",
+        "Description":  "Read audit logs related to custom security attributes."
+    },
+    {
         "DisplayName":  "Authentication Administrator",
         "Id":  "c4e39bd9-1100-46d3-8c65-fb160da0071f",
         "Description":  "Allowed to view, set and reset authentication method information for any non-admin user."
     },
     {
+        "DisplayName":  "Authentication Extensibility Administrator",
+        "Id":  "25a516ed-2fa0-40ea-a2d0-12923a21473a",
+        "Description":  "Customize sign in and sign up experiences for users by creating and managing custom authentication extensions."
+    },
+    {
         "DisplayName":  "Authentication Policy Administrator",
         "Id":  "0526716b-113d-4c15-b2c8-68e3c22b9f80",
         "Description":  "Can create and manage the authentication methods policy, tenant-wide MFA settings, password protection policy, and verifiable credentials."
+    },
+    {
+        "DisplayName":  "Azure AD Joined Device Local Administrator",
+        "Id":  "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+        "Description":  "Users assigned to this role are added to the local administrators group on Microsoft Entra joined devices."
+    },
+    {
+        "DisplayName":  "Azure DevOps Administrator",
+        "Id":  "e3973bdf-4987-49ae-837a-ba8e231c7286",
+        "Description":  "Can manage Azure DevOps organization policy and settings."
+    },
+    {
+        "DisplayName":  "Azure Information Protection Administrator",
+        "Id":  "7495fdc4-34c4-4d15-a289-98788ce399fd",
+        "Description":  "Can manage all aspects of the Azure Information Protection product."
     },
     {
         "DisplayName":  "B2C IEF Keyset Administrator",
@@ -92,12 +107,12 @@
     {
         "DisplayName":  "Cloud Device Administrator",
         "Id":  "7698a772-787b-4ac8-901f-60d6b08affd2",
-        "Description":  "Full access to manage devices in Azure AD."
+        "Description":  "Limited access to manage devices in Microsoft Entra ID."
     },
     {
         "DisplayName":  "Compliance Administrator",
         "Id":  "17315797-102d-40b4-93e0-432062caca18",
-        "Description":  "Can read and manage compliance configuration and reports in Azure AD and Microsoft 365."
+        "Description":  "Can read and manage compliance configuration and reports in Microsoft Entra ID and Microsoft 365."
     },
     {
         "DisplayName":  "Compliance Data Administrator",
@@ -142,7 +157,7 @@
     {
         "DisplayName":  "Directory Synchronization Accounts",
         "Id":  "d29b2b05-8046-44ba-8758-1e26182fcf32",
-        "Description":  "Only used by Azure AD Connect service."
+        "Description":  "Only used by Microsoft Entra Connect service."
     },
     {
         "DisplayName":  "Directory Writers",
@@ -160,6 +175,11 @@
         "Description":  "Can manage all aspects of the Dynamics 365 product."
     },
     {
+        "DisplayName":  "Dynamics 365 Business Central Administrator",
+        "Id":  "963797fb-eb3b-4cde-8ce3-5878b3f32a3f",
+        "Description":  "Manage all aspects of Dynamics 365 Business Central."
+    },
+    {
         "DisplayName":  "Edge Administrator",
         "Id":  "3f1acade-1e04-4fbc-9b69-f0302cd84aef",
         "Description":  "Manage all aspects of Microsoft Edge."
@@ -173,6 +193,11 @@
         "DisplayName":  "Exchange Recipient Administrator",
         "Id":  "31392ffb-586c-42d1-9346-e59415a2cc4e",
         "Description":  "Can create or update Exchange Online recipients within the Exchange Online organization."
+    },
+    {
+        "DisplayName":  "Extended Directory User Administrator",
+        "Id":  "dd13091a-6207-4fc0-82ba-3641e056ab95",
+        "Description":  "Manage all aspects of external user profiles in the extended directory for Teams."
     },
     {
         "DisplayName":  "External ID User Flow Administrator",
@@ -190,14 +215,24 @@
         "Description":  "Can configure identity providers for use in direct federation."
     },
     {
+        "DisplayName":  "Fabric Administrator",
+        "Id":  "a9ea8996-122f-4c74-9520-8edcd192826c",
+        "Description":  "Manages all aspects of Microsoft Fabric."
+    },
+    {
         "DisplayName":  "Global Administrator",
         "Id":  "62e90394-69f5-4237-9190-012177145e10",
-        "Description":  "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities."
+        "Description":  "Can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities."
     },
     {
         "DisplayName":  "Global Reader",
         "Id":  "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
         "Description":  "Can read everything that a Global Administrator can, but not update anything."
+    },
+    {
+        "DisplayName":  "Global Secure Access Administrator",
+        "Id":  "ac434307-12b9-4fa1-a708-88bf58caabc1",
+        "Description":  "Create and manage all aspects of Global Secure Internet Access and Microsoft Global Secure Private Access, including managing access to public and private endpoints."
     },
     {
         "DisplayName":  "Groups Administrator",
@@ -222,12 +257,12 @@
     {
         "DisplayName":  "Hybrid Identity Administrator",
         "Id":  "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
-        "Description":  "Can manage AD to Azure AD cloud provisioning, Azure AD Connect, and federation settings."
+        "Description":  "Can manage Active Directory to Microsoft Entra cloud provisioning, Microsoft Entra Connect, and federation settings."
     },
     {
         "DisplayName":  "Identity Governance Administrator",
         "Id":  "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
-        "Description":  "Manage access using Azure AD for identity governance scenarios."
+        "Description":  "Manage access using Microsoft Entra ID for identity governance scenarios."
     },
     {
         "DisplayName":  "Insights Administrator",
@@ -272,7 +307,7 @@
     {
         "DisplayName":  "Lifecycle Workflows Administrator",
         "Id":  "59d46f88-662b-457b-bceb-5c3809e5908f",
-        "Description":  "Create and manage all aspects of workflows and tasks associated with Lifecycle Workflows in Azure AD."
+        "Description":  "Create and manage all aspects of workflows and tasks associated with Lifecycle Workflows in Microsoft Entra ID."
     },
     {
         "DisplayName":  "Message Center Privacy Reader",
@@ -330,11 +365,6 @@
         "Description":  "Manage all aspects of Entra Permissions Management."
     },
     {
-        "DisplayName":  "Power BI Administrator",
-        "Id":  "a9ea8996-122f-4c74-9520-8edcd192826c",
-        "Description":  "Can manage all aspects of the Power BI product."
-    },
-    {
         "DisplayName":  "Power Platform Administrator",
         "Id":  "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
         "Description":  "Can create and manage all aspects of Microsoft Dynamics 365, PowerApps and Microsoft Flow."
@@ -357,7 +387,7 @@
     {
         "DisplayName":  "Privileged Role Administrator",
         "Id":  "e8611ab8-c189-46e8-94e1-60213ab1f814",
-        "Description":  "Can manage role assignments in Azure AD, and all aspects of Privileged Identity Management."
+        "Description":  "Can manage role assignments in Microsoft Entra ID, and all aspects of Privileged Identity Management."
     },
     {
         "DisplayName":  "Reports Reader",
@@ -392,7 +422,7 @@
     {
         "DisplayName":  "Security Reader",
         "Id":  "5d6b6bb7-de71-4623-b4af-96380a352509",
-        "Description":  "Can read security information and reports in Azure AD and Office 365."
+        "Description":  "Can read security information and reports in Microsoft Entra ID and Office 365."
     },
     {
         "DisplayName":  "Service Support Administrator",
@@ -437,7 +467,7 @@
     {
         "DisplayName":  "Tenant Creator",
         "Id":  "112ca1a2-15ad-4102-995e-45b0bc479a6a",
-        "Description":  "Create new Azure AD or Azure AD B2C tenants."
+        "Description":  "Create new Microsoft Entra or Azure AD B2C tenants."
     },
     {
         "DisplayName":  "Usage Summary Reports Reader",
@@ -460,6 +490,21 @@
         "Description":  "View product feedback, survey results, and reports to find training and communication opportunities."
     },
     {
+        "DisplayName":  "Virtual Visits Administrator",
+        "Id":  "e300d9e7-4a2b-4295-9eff-f1c78b36cc98",
+        "Description":  "Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app."
+    },
+    {
+        "DisplayName":  "Viva Goals Administrator",
+        "Id":  "92b086b3-e367-4ef2-b869-1de128fb986e",
+        "Description":  "Manage and configure all aspects of Microsoft Viva Goals."
+    },
+    {
+        "DisplayName":  "Viva Pulse Administrator",
+        "Id":  "87761b17-1ed2-4af3-9acd-92a150038160",
+        "Description":  "Can manage all settings for Microsoft Viva Pulse app"
+    },
+    {
         "DisplayName":  "Windows 365 Administrator",
         "Id":  "11451d60-acb2-45eb-a7d6-43d0f0125c13",
         "Description":  "Can provision and manage all aspects of Cloud PCs."
@@ -468,11 +513,6 @@
         "DisplayName":  "Windows Update Deployment Administrator",
         "Id":  "32696413-001a-46ae-978c-ce0f6b3620d2",
         "Description":  "Can create and manage all aspects of Windows Update deployments through the Windows Update for Business deployment service."
-    },
-    {
-        "DisplayName":  "Virtual Visits Administrator",
-        "Id":  "e300d9e7-4a2b-4295-9eff-f1c78b36cc98",
-        "Description":  "Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app."
     },
     {
         "DisplayName":  "Workplace Device Join",
