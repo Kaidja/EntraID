@@ -1,2 +1,2 @@
-# Azure Active Directory
-Automation around Azure Active Directory
+# Entra ID
+Automation around Entra ID
