@@ -1,11 +1,11 @@
 $Scopes = @(
-    "Directory.Read.All"
+    "RoleManagementPolicy.Read.AzureADGroup"
 )
 
-Connect-MgGraph -Scopes $Scopes -ForceRefresh
+Connect-MgGraph -Scopes $Scopes
 
-Get-MgDirectoryRoleTemplate | 
-    Select-Object -Property DisplayName,Id,Description | 
-    Sort-Object -Property DisplayName | ConvertTo-Json | Out-File "C:\Reports\AADRoles.JSON"
+$Roles = Get-MgRoleManagementDirectoryRoleDefinition
+$Roles | Select-Object -Property DisplayName, Id, Description | 
+    ConvertTo-Json | Out-File C:\Temp\EntraRoles.json
 
-Get-MgDirectoryRoleTemplate | Measure-Object
+Get-MgRoleManagementDirectoryRoleDefinition | Measure-Object
